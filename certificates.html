@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Certificates for Paul Anthony F. Valderama" />
+    <title>Certificates | Paul Anthony Valderama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img class="logo-image" src="other asset/bsu logo.png" alt="Bulacan State University logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="project-detail.html">Projects</a>
+        <a href="certificates.html">Certificates</a>
+      </nav>
+      <a class="btn btn-outline" href="about.html">About Me</a>
+    </header>
+
+    <main class="detail-page">
+      <section class="detail-intro reveal">
+        <div class="section-heading">
+          <p>Certificates</p>
+          <h2>My Certificate Portfolio</h2>
+        </div>
+        <p class="credentials-intro">
+          Browse certificates by category. Each card shows only the title and image. Click any card to open full certificate details.
+        </p>
+      </section>
+
+      <section class="certificates-panel">
+        <div class="cert-groups" id="certificateGrid"></div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="certificateModal" aria-hidden="true">
+      <article class="welcome-modal certificate-modal" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle">
+        <button class="modal-close" type="button" aria-label="Close certificate details">&times;</button>
+        <div class="certificate-modal-layout">
+          <div class="certificate-modal-visual">
+            <img id="certificateModalImage" src="" alt="Certificate preview" loading="lazy" />
+          </div>
+          <div class="certificate-modal-content">
+            <p class="modal-kicker" id="certificateModalCategory"></p>
+            <h2 id="certificateModalTitle"></h2>
+            <div class="certificate-meta">
+              <p><strong>Company:</strong> <span id="certificateModalCompany"></span></p>
+              <p><strong>Date:</strong> <span id="certificateModalDate"></span></p>
+              <p><strong>Issued By:</strong> <span id="certificateModalIssuedBy"></span></p>
+            </div>
+            <p id="certificateModalDescription" class="certificate-modal-description"></p>
+            <div class="modal-actions">
+              <a id="certificateCredentialBtn" class="btn" href="#" target="_blank" rel="noopener noreferrer">View Credential</a>
+              <button class="btn btn-outline" type="button" data-modal-close>Close</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer class="site-footer site-footer-rich">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-top">
+            <img class="logo-image" src="other asset/bsu logo.png" alt="Bulacan State University logo" />
+            <h3>Paul Anthony F. Valderama</h3>
+          </div>
+          <p>Business Analytics student focused on practical systems, data-informed solutions, and user-centered delivery.</p>
+        </div>
+
+        <div class="footer-block footer-shortcuts-block"><h4>Quick Shortcuts</h4>
+          <div class="footer-shortcuts">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="about.html">About Me</a>
+          </div>
+        </div>
+
+        <div class="footer-block footer-profiles-block"><h4>Quick link to my profiles:</h4>
+          <div class="footer-social profile-icon-grid">
+            <a class="profile-icon-btn" href="https://www.linkedin.com/in/valderama-paul-anthony-f-7b824b330/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn" loading="lazy" />
+            </a>
+            <a class="profile-icon-btn" href="https://valderamapaulbsit.wixsite.com/e-portfolio" target="_blank" rel="noreferrer" aria-label="Wix E-Portfolio">
+              <img src="assets/icons/Wix.com_website_logo.svg.png" alt="Wix" loading="lazy" />
+            </a>
+            <a class="profile-icon-btn" href="https://www.credly.com/users/valderama-paul-anthony-f/badges#credly" target="_blank" rel="noreferrer" aria-label="Credly">
+              <img src="assets/icons/credly-zrtwknl91e1cngw2irj9.png" alt="Credly" loading="lazy" />
+            </a>
+            <a class="profile-icon-btn" href="https://www.salesforce.com/trailblazer/j7makgww4yx9airm1u" target="_blank" rel="noreferrer" aria-label="Salesforce">
+              <img src="assets/icons/Salesforce.com_logo.svg.png" alt="Salesforce" loading="lazy" />
+            </a>
+            <a class="profile-icon-btn" href="https://www.facebook.com/Anthony.Flores84" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <img src="assets/icons/Facebook_f_logo_(2019).svg.png" alt="Facebook" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copy">All Rights Reserved | Paul Anthony F. Valderama | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
